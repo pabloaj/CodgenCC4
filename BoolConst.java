@@ -70,7 +70,11 @@ class BoolConst {
 
 	/* Add code to reference the dispatch table for class Bool here */
 
+<<<<<<< HEAD
 	s.println("Bool"+CgenSupport.BOOLTAG);		// dispatch table
+=======
+	s.println("");		// dispatch table
+>>>>>>> 5a5cacf1394c015a7a0a3acdfb66b6ca00aa0a60
 	s.println(CgenSupport.WORD + (val ? "1" : "0")); // value (0 or 1)
     }
 }

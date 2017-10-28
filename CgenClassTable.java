@@ -41,6 +41,7 @@ class CgenClassTable extends SymbolTable {
     private int boolclasstag;
 
 
+<<<<<<< HEAD
 
 
 /*
@@ -80,6 +81,8 @@ class CgenClassTable extends SymbolTable {
 */
 
 
+=======
+>>>>>>> 5a5cacf1394c015a7a0a3acdfb66b6ca00aa0a60
     // The following methods emit code for constants and global
     // declarations.
 
@@ -410,6 +413,7 @@ class CgenClassTable extends SymbolTable {
 	parent.addChild(nd);
     }
 
+<<<<<<< HEAD
 /************************************************************/
 private void installFeatures(){
     	CgenNode object = root();
@@ -592,6 +596,8 @@ private void installFeatures(){
 
 
 /***********************************************************/
+=======
+>>>>>>> 5a5cacf1394c015a7a0a3acdfb66b6ca00aa0a60
     /** Constructs a new class table and invokes the code generator */
     public CgenClassTable(Classes cls, PrintStream str) {
 	nds = new Vector();
@@ -609,11 +615,14 @@ private void installFeatures(){
 	installClasses(cls);
 	buildInheritanceTree();
 
+<<<<<<< HEAD
 	/********************************************/
 
 	installFeatures();
 	/*********************************************/
 
+=======
+>>>>>>> 5a5cacf1394c015a7a0a3acdfb66b6ca00aa0a60
 	code();
 
 	exitScope();
@@ -636,6 +645,7 @@ private void installFeatures(){
 	//                   - class_nameTab
 	//                   - dispatch tables
 
+<<<<<<< HEAD
 			codeClassNameTab();
 
 			codeClassObjTab();
@@ -652,6 +662,8 @@ private void installFeatures(){
 
 
 
+=======
+>>>>>>> 5a5cacf1394c015a7a0a3acdfb66b6ca00aa0a60
 	if (Flags.cgen_debug) System.out.println("coding global text");
 	codeGlobalText();
 
@@ -662,6 +674,7 @@ private void installFeatures(){
     }
 
     /** Gets the root of the inheritance tree */
+<<<<<<< HEAD
     public CgenNode root() 
     {
 	return (CgenNode)probe(TreeConstants.Object_);
@@ -737,6 +750,11 @@ public int nextLabel(){
 
 
     
+=======
+    public CgenNode root() {
+	return (CgenNode)probe(TreeConstants.Object_);
+    }
+>>>>>>> 5a5cacf1394c015a7a0a3acdfb66b6ca00aa0a60
 }
 			  
     
